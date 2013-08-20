@@ -1,0 +1,23 @@
+This ZIP file includes a couple of simple utilities to assist in
+determining how much memory your PC can or has supplied to OS/2 2.0.
+
+The program MEMBIOS.EXE (source in MEMBIOS.C) can be run from a
+native mode DOS (not an OS/2 VDM) to determine how much contiguous
+extended memory your PC will report during the OS/2 boot procedure.
+It should be used under DOS where no Memory Managers (e.g. QEMM, 386Max)
+are running.  If a Memory Manager is running, the call it uses will
+report nothing available.
+
+The program MEMAVL20.EXE (source in MEMAVL20.C) can be run from an
+OS/2 2.0 command line to report three values:
+
+  1. Total Physical Memory in PC
+  2. Memory used by 'resident' modules
+  3. Total Virtual Memory available for allocation (includes disk space)
+
+I hope these modules can assist you in determining how well OS/2 2.0
+makes use of your PC.  Obviously there are other factors that determine
+how much memory OS/2 can use on your PC, so there are no guarantees
+that the values reported by these programs have any validity.
+
+If you have any comments, reply to Richard Stafford 73750,2305.
